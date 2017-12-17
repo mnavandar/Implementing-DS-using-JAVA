@@ -26,7 +26,12 @@ public class Intstack {
 		}
 	}
 	public int  pop(){
+		if(!isEmpty()){
 		return stack[top--];
+		}else{
+		 System.out.println("Underflow");
+		 return -1;
+		}
 	}
 	public boolean isEmpty(){
 		return (top == -1);
